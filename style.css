@@ -1,0 +1,124 @@
+* {
+    font-family:'Red Hat Display', sans-serif;
+}
+
+.container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.card {
+    width: 344px;
+    border-radius: 16px;
+    background-color: white;
+    padding-bottom: 16px;
+    box-shadow: 0px 10px 43px 9px rgba(0,0,0,0.1);
+}
+.card-img img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.card-content {
+    width: 80%;
+    padding: 16px;
+    margin: auto;
+    text-align: center;
+}
+.card-content h1 {
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: hsl(223, 47%, 23%);
+}
+.card-content p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    margin:0rem 1rem 1rem;
+}
+
+.plan {
+    padding: 1rem;
+    margin: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 50% auto;
+    align-items: center;
+    gap: 8px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 16px;
+}
+.plan img {
+    width: 50px;
+    height: 50px;
+}
+
+.plan-text {
+    font-size: 1rem;
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+.plan-text p {
+    margin: 0;
+    text-align: start;
+}
+.plan-text p:first-child {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.change {
+    text-align: center;
+    font-weight: 900;
+    font-size: .75rem;
+}
+
+.btn-buy {
+    width: 100%;
+    font-family: 'Red Hat Display';
+    font-size: .75rem;
+    font-weight: 900;
+    background-color:hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    margin-top: 16px;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    border-radius: 8px;
+    box-shadow: 0px 15px 16px 0px rgba(0,0,0,0.1);
+}
+.btn-cancel {
+    background-color: transparent;
+    border: none;
+    color: hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display';
+    margin-top: 16px;
+    font-weight: 900;
+    font-size: .75rem;
+}
+.btn-buy:hover {
+    background-color:hsla(245, 75%, 52%, 0.75);
+}
+
+.btn-buy:hover , .btn-cancel:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .card {
+        width: 280px;
+    }
+    .card-content p {
+        font-size: .75rem;
+    }
+}
